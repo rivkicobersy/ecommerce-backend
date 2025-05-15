@@ -1,30 +1,30 @@
 {
   "name": "ecommerce-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "GraphQL backend for ecommerce app using Fastify and TypeScript",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "fastify",
+    "graphql",
+    "typescript",
+    "ecommerce"
+  ],
+  "author": "rivkicobersy",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^6.0.0",
-    "dotenv": "^16.5.0",
-    "fastify": "^5.3.3",
-    "jsonwebtoken": "^9.0.2",
-    "mercurius": "^16.1.0",
-    "pg": "^8.16.0",
-    "typeorm": "^0.3.24"
+    "dequal": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.22.1",
+    "mercurius": "^10.2.2"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/jsonwebtoken": "^9.0.9",
-    "@types/node": "^22.15.18",
+    "@types/node": "^20.5.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.1.6"
   }
 }
